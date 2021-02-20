@@ -10,4 +10,4 @@ spec:
       protocol: TCP
   selector:
     app: vpromc
-  type: NodePort
+  type: ClusterIP

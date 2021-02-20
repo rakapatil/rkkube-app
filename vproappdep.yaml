@@ -5,7 +5,7 @@ metadata:
   labels:
     app: vproapp
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: vproapp
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: vproapp
-          image: rkvprofile/vprofileapp:tagname:V1
+          image: rkvprofile/vprofileapp:V1
           ports:
             - name: vproapp-port
               containerPort: 8080
